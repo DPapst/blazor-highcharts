@@ -5,7 +5,7 @@
         public Label Label { get; set; }
         public DataLabels DataLabels { get; set; }
         public Marker Marker { get; set; }
-        public double? PointIntervall { get; set; }
+        public double? PointInterval { get; set; }
         public string PointIntervalUnit { get; set; }
         public double? PointStart { get; set; }
         public double? FillOpacity { get; set; }
