@@ -1,12 +1,8 @@
-﻿using Newtonsoft.Json;
-
-namespace Allegiance.Blazor.Highcharts.Options
+﻿namespace Allegiance.Blazor.Highcharts.Options
 {
     public partial class Accessibility
     {
-        [JsonProperty("rangeDescription", NullValueHandling = NullValueHandling.Ignore)]
         public string RangeDescription { get; set; }
-        [JsonProperty("description", NullValueHandling = NullValueHandling.Ignore)]
         public string Description { get; set; }
 
         public Accessibility()

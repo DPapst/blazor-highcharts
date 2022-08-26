@@ -1,12 +1,8 @@
-using Newtonsoft.Json;
-
 namespace Allegiance.Blazor.Highcharts.Options
 {
     public partial class Animation
     {
-        [JsonProperty("duration", NullValueHandling = NullValueHandling.Ignore)]
         public int? Duration { get; set; }
-        [JsonProperty("defer", NullValueHandling = NullValueHandling.Ignore)]
         public int? Defer { get; set; }
         public Animation()
         {

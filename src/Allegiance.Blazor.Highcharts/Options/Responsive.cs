@@ -1,11 +1,9 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Allegiance.Blazor.Highcharts.Options
 {
     public partial class Responsive
     {
-        [JsonProperty("rules", NullValueHandling = NullValueHandling.Ignore)]
         public List<Rule> Rules { get; set; }
 
         public Responsive()

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Allegiance.Blazor.Highcharts.Constants
+﻿namespace Allegiance.Blazor.Highcharts.Constants
 {
     public class DashStyle
-    {        
+    {
         public static string Solid = "Solid";
         public static string ShortDash = "ShortDash";
         public static string ShortDot = "ShortDot";
