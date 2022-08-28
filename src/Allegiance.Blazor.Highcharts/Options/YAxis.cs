@@ -23,6 +23,8 @@ namespace Allegiance.Blazor.Highcharts.Options
 
         public List<string> Categories { get; set; }
 
+        public bool Opposite { get; set; }
+
         public string LineColor { get; set; }
         public List<PlotLine> PlotLines { get; set; }
         public int? GridLineWidth { get; set; }
