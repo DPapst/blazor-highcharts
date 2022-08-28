@@ -22,6 +22,8 @@ namespace Allegiance.Blazor.Highcharts.Options
         public bool? Visible { get; set; }
         public string Stack { get; set; }
 
+        public int? YAxis { get; set; }
+
         public SeriesElement()
         {
 
