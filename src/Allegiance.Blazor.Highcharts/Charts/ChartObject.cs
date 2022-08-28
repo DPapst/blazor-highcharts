@@ -1,9 +1,9 @@
-﻿using Allegiance.Blazor.Highcharts.Options;
-using Microsoft.JSInterop;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Allegiance.Blazor.Highcharts.Options;
+using Microsoft.JSInterop;
 
 namespace Allegiance.Blazor.Highcharts.Charts
 {
@@ -19,7 +19,7 @@ namespace Allegiance.Blazor.Highcharts.Charts
 
         public XAxis XAxis { get; set; }
 
-        public YAxis YAxis { get; set; }
+        public List<YAxis> YAxis { get; set; }
 
         public Tooltip Tooltip { get; set; }
 
@@ -43,7 +43,7 @@ namespace Allegiance.Blazor.Highcharts.Charts
             Title = new Title();
             Subtitle = new Title();
             XAxis = new XAxis();
-            YAxis = new YAxis();
+            YAxis = null;
             Tooltip = new Tooltip();
             PlotOptions = new PlotOptions();
             Series = null;
