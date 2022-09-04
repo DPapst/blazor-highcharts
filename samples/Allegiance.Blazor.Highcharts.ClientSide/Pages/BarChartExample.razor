@@ -101,19 +101,21 @@
             Categories = new List<object>() { "In", "Out" },
             Title = new Title(false)
         },
-        YAxis = new YAxis()
+        YAxis = new()
         {
-            Min = 0,
-            Title = new Title()
+            new YAxis()
             {
-                Text = "Amount",
-                Align = Align.High
-            },
-            Labels = new Labels()
-            {
-                Overflow = Overflow.Justify
-            },
-
+                Min = 0,
+                Title = new Title()
+                {
+                    Text = "Amount",
+                    Align = Align.High
+                },
+                Labels = new Labels()
+                {
+                    Overflow = Overflow.Justify
+                },
+            }
         },
         Tooltip = new Tooltip()
         { ValuePrefix = "R" },

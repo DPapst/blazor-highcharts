@@ -92,9 +92,12 @@
                 "Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
             }
         },
-        YAxis = new YAxis()
+        YAxis = new()
         {
-            Title = new Title("Temperature ( °C )"),
+            new YAxis()
+            {
+                Title = new Title("Temperature ( °C )"),
+            },
         },
 
         PlotOptions = new PlotOptions()

@@ -139,12 +139,11 @@
 
         Subtitle = new Title("Source: thesolarfoundation.com"),
         Title = new Title("Solar Employment Growth by Sector, 2010-2016"),
-        YAxis = new YAxis(
-            new Title("Number of Employees")
-            ),
-        XAxis = new XAxis(
-            new Accessibility("Range: 2010 to 2017")
-            )
+        YAxis = new()
+        {
+            new YAxis(new Title("Number of Employees")),
+        },
+        XAxis = new XAxis(new Accessibility("Range: 2010 to 2017"))
     };
 
 

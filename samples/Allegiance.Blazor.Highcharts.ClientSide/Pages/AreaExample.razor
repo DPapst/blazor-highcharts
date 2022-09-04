@@ -145,13 +145,18 @@
                 DashStyle = DashStyle.DashDot
             } }
         },
-        YAxis = new YAxis() {
-            Title = new Title("Nuclear weapon states"),
-            Labels = new Labels("function() {return this.value / 1000 + \'k\';}"),
-            PlotLines = new List<PlotLine>() { new PlotLine() {
-                Value = 2000,
-                DashStyle = DashStyle.DashDot
-            } }
+        YAxis = new()
+        {
+            new YAxis() {
+                Title = new Title("Nuclear weapon states"),
+                Labels = new Labels("function() {return this.value / 1000 + \'k\';}"),
+                PlotLines = new List<PlotLine>() {
+                    new PlotLine() {
+                        Value = 2000,
+                        DashStyle = DashStyle.DashDot
+                    }
+                }
+            }
         }
 
     };

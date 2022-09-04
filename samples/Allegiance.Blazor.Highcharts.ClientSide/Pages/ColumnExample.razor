@@ -68,9 +68,12 @@
         Chart = new Chart(ChartType.Column, false),
         Title = new Title("ASCII value of letters in 'COLUMN'"),
         XAxis = new XAxis(AxisType.Category),
-        YAxis = new YAxis()
+        YAxis = new()
         {
-            Title = new Title("Letter"),
+            new YAxis()
+            {
+                Title = new Title("Letter"),
+            }
         },
         Legend = new Legend(false),
         PlotOptions = new PlotOptions()
@@ -89,7 +92,7 @@
                 Name = "ASCII value",
                 ColorByPoint = true,
                 Data = new List<object>()
-        {
+                {
                     {new Datum("C", 67) },
                     {new Datum("O", 79) },
                     {new Datum("L", 76) },

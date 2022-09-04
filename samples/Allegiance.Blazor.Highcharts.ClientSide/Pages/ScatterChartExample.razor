@@ -168,9 +168,12 @@
             EendOnTick = true,
             ShowLastLabel = true,
         },
-        YAxis = new YAxis()
+        YAxis = new()
         {
-            Title = new Title("Weight (kg)")
+            new YAxis()
+            {
+                Title = new Title("Weight (kg)")
+            },
         },
         Legend = new Legend()
         {

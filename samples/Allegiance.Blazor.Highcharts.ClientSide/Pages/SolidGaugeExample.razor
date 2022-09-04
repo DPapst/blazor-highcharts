@@ -206,19 +206,22 @@
             }
 
         },
-        YAxis = new YAxis()
+        YAxis = new()
         {
-            Min = 0,
-            Max = 100,
-            LineWidth = 0,
-            TickPositions = new List<object>(),
-            Stops = new List<object>()
+            new YAxis()
             {
-                new List<object>(){0.1, "#ea6868"},
-                new List<object>(){0.49, "#ea6868"},
-                new List<object>(){0.5, "#fbaf5f"},
-                new List<object>(){0.69, "#fbaf5f"},
-                new List<object>(){0.7, "#5bc9b3"}
+                Min = 0,
+                Max = 100,
+                LineWidth = 0,
+                TickPositions = new List<object>(),
+                Stops = new List<object>()
+                {
+                    new List<object>(){0.1, "#ea6868"},
+                    new List<object>(){0.49, "#ea6868"},
+                    new List<object>(){0.5, "#fbaf5f"},
+                    new List<object>(){0.69, "#fbaf5f"},
+                    new List<object>(){0.7, "#5bc9b3"}
+                }
             }
         },
         PlotOptions = new PlotOptions()
