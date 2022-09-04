@@ -1,4 +1,4 @@
-namespace Allegiance.Blazor.Highcharts.Options
+﻿namespace Allegiance.Blazor.Highcharts.Options
 {
     public partial class PlotOptionsPie
     {
