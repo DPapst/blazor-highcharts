@@ -13,6 +13,7 @@
         public int? Distance { get; set; }
         public int? Padding { get; set; }
         public string ValueSuffix { get; set; }
+        public int? ValueDecimals { get; set; }
 
         public Tooltip()
         {

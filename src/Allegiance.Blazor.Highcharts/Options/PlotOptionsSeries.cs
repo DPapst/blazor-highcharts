@@ -14,6 +14,7 @@
         public int? LineWidth { get; set; }
         public string LineColor { get; set; }
         public Animation Animation { get; set; }
+        public Tooltip Tooltip { get; set; }
 
 
 

@@ -21,7 +21,7 @@ namespace Allegiance.Blazor.Highcharts.Options
         public string InnerSize { get; set; }
         public bool? Visible { get; set; }
         public string Stack { get; set; }
-
+        public Tooltip Tooltip { get; set; }
         public int? YAxis { get; set; }
 
         public SeriesElement()
